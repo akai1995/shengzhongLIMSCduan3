@@ -1,0 +1,166 @@
+{
+  "pages": [
+    {
+      "path": "pages/tabs/workbench/workbench",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "工作台"
+      }
+    },
+    {
+      "path": "pages/todo/list",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "待办事项"
+      }
+    },
+    {
+      "path": "pages/todo/detail",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "审批详情"
+      }
+    },
+    {
+      "path": "pages/todo/warning-detail",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "预警详情"
+      }
+    },
+    {
+      "path": "pages/notifications/list",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "消息通知"
+      }
+    },
+    {
+      "path": "pages/scan/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "扫码入库"
+      }
+    },
+    {
+      "path": "pages/learning/detail",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "学习详情"
+      }
+    },
+    {
+      "path": "pages/project/create",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "新建项目"
+      }
+    },
+    {
+      "path": "pages/project/detail",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "项目进度"
+      }
+    },
+    {
+      "path": "pages/project/members",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "项目成员"
+      }
+    },
+    {
+      "path": "pages/project/results",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "项目成果"
+      }
+    },
+    {
+      "path": "pages/approval/quick",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "快速审批"
+      }
+    },
+    {
+      "path": "pages/device/reserve",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "设备预约"
+      }
+    },
+    {
+      "path": "pages/supply/receive",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "领取耗材"
+      }
+    },
+    {
+      "path": "pages/ai/generate",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "AI生成记录"
+      }
+    },
+    {
+      "path": "pages/tabs/research/research",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "科研"
+      }
+    },
+    {
+      "path": "pages/tabs/lab/lab",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "实验室"
+      }
+    },
+    {
+      "path": "pages/tabs/monitor/monitor",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "物联监控"
+      }
+    },
+    {
+      "path": "pages/tabs/mine/mine",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "我的"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "科研管理系统",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F7F7F7",
+    "backgroundColorTop": "#F7F7F7",
+    "backgroundColorBottom": "#F7F7F7"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#8C8C8C",
+    "selectedColor": "#177DDC",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      { "pagePath": "pages/tabs/workbench/workbench", "text": "工作台" },
+      { "pagePath": "pages/tabs/research/research", "text": "科研" },
+      { "pagePath": "pages/tabs/lab/lab", "text": "实验室" },
+      { "pagePath": "pages/tabs/monitor/monitor", "text": "物联" },
+      { "pagePath": "pages/tabs/mine/mine", "text": "我的" }
+    ]
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^ut-(.*)": "@/components/custom-ui/ut-$1/ut-$1.vue",
+      "^project-(.*)": "@/components/project-ui/project-$1/project-$1.vue"
+    }
+  }
+}

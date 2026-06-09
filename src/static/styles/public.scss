@@ -1,0 +1,283 @@
+@import '../styles/mixins.scss';
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F7F7F7;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #177DDC 0%, #4CAFFF 100%);
+  padding: 60rpx 32rpx 40rpx;
+  color: #FFFFFF;
+  position: relative;
+  
+  .header-title {
+    font-size: 44rpx;
+    font-weight: 600;
+    margin-bottom: 8rpx;
+  }
+  
+  .header-subtitle {
+    font-size: 26rpx;
+    opacity: 0.9;
+  }
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 16rpx;
+  margin: 0 24rpx 24rpx;
+  padding: 24rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.04);
+  
+  .card-title {
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 20rpx;
+  }
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #177DDC 0%, #4CAFFF 100%);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 12rpx;
+  height: 88rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &:active {
+    opacity: 0.85;
+  }
+}
+
+.btn-secondary {
+  background-color: #FFFFFF;
+  color: #177DDC;
+  border: 2rpx solid #177DDC;
+  border-radius: 12rpx;
+  height: 88rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &:active {
+    background-color: #F0F7FF;
+  }
+}
+
+.btn-text {
+  color: #177DDC;
+  font-size: 28rpx;
+  padding: 0;
+  background: none;
+  border: none;
+  
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #177DDC;
+}
+
+.text-success {
+  color: #49AA19;
+}
+
+.text-warning {
+  color: #D89614;
+}
+
+.text-danger {
+  color: #F53F3F;
+}
+
+.text-secondary {
+  color: #595959;
+}
+
+.text-auxiliary {
+  color: #8C8C8C;
+}
+
+.text-xs {
+  font-size: 20rpx;
+}
+
+.text-sm {
+  font-size: 24rpx;
+}
+
+.text-md {
+  font-size: 28rpx;
+}
+
+.text-lg {
+  font-size: 32rpx;
+}
+
+.text-xl {
+  font-size: 40rpx;
+}
+
+.font-weight-bold {
+  font-weight: 600;
+}
+
+.mt-sm {
+  margin-top: 12rpx;
+}
+
+.mt-md {
+  margin-top: 16rpx;
+}
+
+.mb-sm {
+  margin-bottom: 12rpx;
+}
+
+.mb-md {
+  margin-bottom: 16rpx;
+}
+
+.p-sm {
+  padding: 12rpx;
+}
+
+.p-md {
+  padding: 16rpx;
+}
+
+.divider {
+  height: 16rpx;
+  background-color: #F7F7F7;
+}
+
+.status-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6rpx 16rpx;
+  border-radius: 20rpx;
+  font-size: 22rpx;
+  
+  &.status-pending {
+    background-color: #F5F5F5;
+    color: #8C8C8C;
+  }
+  
+  &.status-processing {
+    background-color: #E8F4FF;
+    color: #177DDC;
+  }
+  
+  &.status-approved {
+    background-color: #E8F5E9;
+    color: #49AA19;
+  }
+  
+  &.status-rejected {
+    background-color: #FFF5F5;
+    color: #F53F3F;
+  }
+  
+  &.status-normal {
+    background-color: #E8F5E9;
+    color: #49AA19;
+  }
+  
+  &.status-warning {
+    background-color: #FFF8E1;
+    color: #D89614;
+  }
+  
+  &.status-danger {
+    background-color: #FFF5F5;
+    color: #F53F3F;
+  }
+}
+
+.icon {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.badge {
+  position: absolute;
+  top: -8rpx;
+  right: -8rpx;
+  min-width: 32rpx;
+  height: 32rpx;
+  background-color: #F53F3F;
+  color: #FFFFFF;
+  font-size: 20rpx;
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8rpx;
+}
+
+.empty-state {
+  padding: 80rpx 40rpx;
+  text-align: center;
+  
+  .empty-icon {
+    width: 120rpx;
+    height: 120rpx;
+    margin: 0 auto 24rpx;
+    opacity: 0.3;
+  }
+  
+  .empty-text {
+    color: #8C8C8C;
+    font-size: 28rpx;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #F0F0F0 25%, #E8E8E8 50%, #F0F0F0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

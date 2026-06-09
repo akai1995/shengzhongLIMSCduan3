@@ -1,0 +1,25 @@
+{
+  "name": "LIMS科研管理系统",
+  "appid": "__UNI__LIMS_C",
+  "description": "LIMS科研管理系统C端小程序",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "h5": {
+    "title": "LIMS科研管理系统",
+    "router": {
+      "mode": "hash",
+      "base": "./"
+    },
+    "devServer": {
+      "port": 8080
+    }
+  },
+  "mp-weixin": {
+    "appid": "wx1234567890abcdef",
+    "setting": {
+      "urlCheck": false
+    },
+    "usingComponents": true
+  }
+}
